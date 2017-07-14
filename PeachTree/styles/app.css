@@ -1,0 +1,65 @@
+
+
+#peachTreeBackground{
+  
+    background-image: url('../assets/background.jpg');
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+
+    width:100%;
+    height:93%;
+    position: relative;
+  display:block;
+  
+  
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', Trebuchet MS;
+    overflow: hidden;
+}
+nav {
+    background-color: white;
+    margin: 0;
+    overflow: hidden;
+    border-bottom: 1px solid orange;
+}
+nav ul{
+    margin: 0;
+    
+}
+nav ul li {
+    /* This allow us to arrange list items in a row, without using float */
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* Create a style for the first level items */
+nav > ul > li > img {
+    color: #aaa;
+    height:5%;
+    display: block;
+    margin: 10px 10px 10px 10px;
+}
+
+.png-icon{
+    margin: 5px auto auto;
+    padding: 0;
+    display: inline-block;
+    background-repeat: no-repeat no-repeat;
+    pointer-events: none;
+}
+
+md-list-item .md-list-item-text, 
+md-list-item > .md-no-style .md-list-item-text {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+              flex: 1 1 auto;
+      margin: auto;
+      text-overflow: ellipsis;
+      overflow: hidden; }

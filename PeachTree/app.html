@@ -1,0 +1,40 @@
+<html ng-app="PeachTreeApp">
+    <head>
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+        <link href="https://fonts.google.com/specimen/Kanit?selection.family=Kanit" rel="stylesheet">
+        <link rel="stylesheet" href="styles/app.css">
+        <script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-aria.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-messages.min.js"></script>
+
+        <!-- Angular Material Library -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+        <script src="transactions.js"></script>
+        <script src="modules/TransactionController.js"></script>
+        <script src="modules/transactionModule.js"></script>
+        <script>    
+            let app = angular.module("PeachTreeApp",["transactionModule","ngMaterial"]).config(function($mdThemingProvider) {
+                       $mdThemingProvider.theme('default') .primaryPalette('blue')
+                        .accentPalette('orange');
+
+                });
+        </script>
+    </head>
+    <body ng-cloak>
+         <nav>
+            <ul>
+                <li><img src="assets/logo.jpg" ></li>
+           
+            </ul>
+        </nav>
+        <div id="peachTreeBackground" >
+        
+            <transaction-submit></transaction-submit>
+        
+        </div>
+    </body>
+
+
+
+</html>
